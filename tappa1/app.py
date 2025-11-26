@@ -9,7 +9,7 @@ def home():
 @app.route("/studenti")
 def studenti():
     lista_studenti= ["studente1", "studente2", "studente3"]
-    return render_template("index.html", studenti=lista_studenti)
+    return render_template("studenti.html", studenti=lista_studenti)
 
 @app.route("/about")
 def about():
