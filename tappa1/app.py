@@ -6,6 +6,11 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/studenti")
+def studenti():
+    lista_studenti= ["studente1", "studente2", "studente3"]
+    return render_template("index.html", studenti=lista_studenti)
+
 @app.route("/about")
 def about():
     mess = "Contenuto del mio messaggio"
