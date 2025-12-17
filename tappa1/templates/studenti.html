@@ -5,12 +5,12 @@ Pagina studenti
 {% endblock %}
 
 {% block content %}
-<p>{{ studenti }}</p>
+    <p>{{ studenti }}</p>
 
-<h2>Lista degli studenti ({{ studenti | length }})</h2>
-<ul>
-{% for studente in studenti %}
-    <li>{{ studente | capitalize }}</li>
-{% endfor %}
-</ul>
+    <h2>Lista degli studenti ({{ studenti | length }})</h2>
+    <ul>
+    {% for studente in studenti %}
+        <li>{{ studente | capitalize }}</li>
+    {% endfor %}
+    </ul>
 {% endblock %}
